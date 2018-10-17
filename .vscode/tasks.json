@@ -1,0 +1,67 @@
+// {
+//     "version": "2.0.0",
+//     "runner": "terminal",
+//     "tasks": [
+//         {
+//             "label": "JavaBuild",
+//             "command": "javac",
+//             "isBuildCommand": true,
+//             "isShellCommand": true,
+//             "args": [
+//                 "-sourcepath", 
+//                 "src", 
+//                 "-d",
+//                 "bin", 
+//                 // "-classpath",
+//                 // "lib/JavaPlot.jar",
+//                 "src/com/bc30138/ga2/*.java",
+//                 // "${file}"
+//             ],
+//             "presentation": {
+//             "panel": "new"
+//         },
+//             "problemMatcher": {
+//                 "owner": "external",
+//                 "fileLocation": ["absolute"],
+//                 "pattern": [
+//                     {
+//                         "regexp": "^(.+\\.java):(\\d):(?:\\s+(error)):(?:\\s+(.*))$",
+//                         "file": 1,
+//                         "location": 2,
+//                         "severity": 3,
+//                         "message": 4
+//                     }
+//                 ]
+//             }
+//         },
+//         {
+//             "label": "JavaRun",
+//             "command": "java",
+//             "isBuildCommand": true,
+//             "isShellCommand": true,
+//             "args": [
+//                 "-classpath",
+//                 "bin:",
+//                 // "com.bc30138.ga2.${fileBasenameNoExtension}"
+//                 "com.bc30138.ga2.GA"
+//             ],
+//             "problemMatcher": {}
+//         }
+//     ]
+// }
+
+{
+"version": "2.0.0",
+    "runner": "terminal",
+    "tasks": [
+        {
+            "label": "JavaBuildRun",
+            "command": "bash",
+            "isBuildCommand": true,
+            "isShellCommand": true,
+            "args": [
+                "./compNstart.sh", 
+            ],
+            "problemMatcher": {}
+    }
+}
