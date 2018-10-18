@@ -1,10 +1,10 @@
 
 package com.bc30138.graphix;
 
+import javax.swing.*;
 import java.awt.*;
-import java.applet.*;
 
-public class Main extends Applet {
+public class Main extends JApplet {
 
     private static final long serialVersionUID = 4902057285471885308L;
 
